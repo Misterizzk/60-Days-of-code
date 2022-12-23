@@ -5,6 +5,9 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+body{
+    overflow-x: hidden;
+}
 .hero{
     height: 100vh;
     width: 100%;
@@ -37,6 +40,7 @@ nav{
     width: 100px;
     justify-content: center;
     margin-left: -27px;
+    max-width: 320px;
 }
 .logo{
     cursor: pointer;
@@ -100,36 +104,30 @@ div h4{
     color: white;
     letter-spacing: 2px;
 }
-@media (max-width: 590px){
-   .list-nav{
-    display: none;
-   }
-   #bar{
-    display: flex;
-   }
-   .btn{
-    margin-left: -100px;
-   }
-
-}
-/* @media (min-width: 320px){
-    .hero,nav{
-        min-width: 768px;
+@media (min-width: 320px){
+    .atas{
+        padding-left: 88px;
     }
-} */
+    #bar{
+        display: none;
+    }
+
 @media (max-width: 320px){
-    .hero,nav{
-        min-width: 768px;
+    .list-nav{
+        display: none;
+    }
+    #bar{
+        display: flex;
     }
 }
-
+}
 
 /*-------------------------------------Slide 2-----------------------------------*/
 .about{
     width: 100%;
     padding: 100px 0px;
     background-color: #678189;
-    max-width: 320px;
+    min-width: 768px;
 }
 .about-text{
     width: 550px;
@@ -165,7 +163,7 @@ div h4{
     height: auto;
     margin-right: auto;
 }
-.card{
+/* .card{
     margin: auto;
     display: flex;
     align-items: center;
@@ -202,23 +200,20 @@ div h4{
 }
 .card-home p{
     font-size: 10px;
-}
-@media (min-width: 320px){
-    .about{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+} */
+/* @media (min-width: 320px){
+    .img{
+        width: 100px;
+        height: 60px;
+        margin-right: 10px;
     }
-    .main{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+    .about-text{
+        font-size: 0.9rem;
     }
     .about-text h2{
-        font-size: 40px;
+        font-size: 20px;
     }
-    .img{
-        width: 300px;
-        height: auto;
+    .about-text h4{
+        font-size: 13px;
     }
-}
+} */
